@@ -1,0 +1,172 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App{
+  display: flex;
+  width: 100%;
+}
+
+.navigationBar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 8vh;
+  display: inline-block;
+  box-shadow: 0px 0px 10px black;
+  z-index: 1;
+}
+
+.navigationBar li{
+  display: inline;
+  margin: auto;
+  vertical-align: middle;
+  line-height: 8vh;
+  padding: 0 50px;
+}
+.searchBar{
+  width: 400px;
+  height: 30px;
+  vertical-align: middle;
+  border-radius: 10px;
+  background-color: white;
+  border: solid 2px #0080FF;
+  color: black;
+  
+}
+
+img{
+  width: 300px;
+  vertical-align: middle;
+}
+
+.container{
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 0 auto;
+  top: 20vh;
+  left: 0;
+  right: 0;
+  background-color: #F4F6F6;
+}
+label{
+  color: #0080FF;
+}
+
+.Posts{
+  color: #0080FF;
+  margin: 100px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px 0px;
+}
+
+.upVote, .downVote, .comment{
+  margin-left: 10px;
+}
+
+.headline{
+  color: #0080FF;
+}
+
+.forumContainer, .indPostContainer{
+  background-color: white;
+  width: 50vh;
+  color: #0080FF;
+  font-weight: bold;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.forumContainer label{
+  font-size: 30px;
+}
+
+.forumContainer form input, .forumContainer form textarea{
+  background-color: white;
+  width: 300px;
+  color: black;
+  border: 2px solid #0080FF;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.indPostContainer{
+  width: 80%;
+  text-align:left
+}
+
+.commentContainer{
+  background-color: #EAEDED;
+  border-radius: 10px;
+  padding: 1px 10px;
+  margin-bottom: 10px;
+}
+
+#commentTime{
+  text-align: end;
+}
+#commentTextBox{
+  width: 50%;
+  background-color: white;
+  border: 2px solid #0080FF;
+  border-radius: 10px;
+  color: black;
+}
+
+.editButton{
+  float: right;
+}
+
+.deleteButton{
+  margin-left: 10px;
+  background-color: crimson;
+}

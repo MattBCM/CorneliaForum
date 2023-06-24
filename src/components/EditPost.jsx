@@ -39,7 +39,7 @@ const EditPost = (props) =>{
                 <input type="text" name='image'/>
                 <br /><br />
                 <button className="formSubmit">Submit</button>
-                <button className='deleteButton'>Delete Post</button>
+                <button className='deleteButton' onClick={deletePost}>Delete Post</button>
             </form>
         </div>
     )

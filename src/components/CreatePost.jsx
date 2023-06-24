@@ -22,7 +22,7 @@ const CreatePost = () =>{
             <h1>Create New Post</h1>
             <form onSubmit={createPost}>
                 <label htmlFor="title">Title</label><br />
-                <input type="text" name="title" required/>
+                <input type="text" name="title" placeholder="Type here..."required/>
                 <br />
                 <label htmlFor="context">description</label><br />
                 <textarea name="context" id="formText" cols="30" rows="10" placeholder="Type here..." required></textarea>

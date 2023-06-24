@@ -9,6 +9,7 @@ const Post = (props) => {
             <button className="upVote">{`🡅 ${props.upvote}`}</button>
             <button className="downVote">{`🡇 ${props.downvote}`}</button>
             <button className="comment">{`💬 ${props.comments}`}</button>
+            <p>{`Created At: ${new Date(props.created)}`}</p>
           </div>
     )
 }

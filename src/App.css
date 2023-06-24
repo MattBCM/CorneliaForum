@@ -47,7 +47,11 @@
 }
 
 .navigationBar{
-  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   background-color: white;
@@ -56,18 +60,17 @@
   width: 100%;
   top: 0;
   left: 0;
-  height: 8vh;
-  display: inline-block;
   box-shadow: 0px 0px 10px black;
   z-index: 1;
 }
 
 .navigationBar li{
-  display: inline;
   margin: auto;
   vertical-align: middle;
-  line-height: 8vh;
   padding: 0 50px;
+}
+.navigationBar div{
+  margin: 20px;
 }
 .searchBar{
   width: 400px;
@@ -169,4 +172,9 @@ label{
 .deleteButton{
   margin-left: 10px;
   background-color: crimson;
+}
+
+#pfp{
+  width: 50px;
+  border-radius: 50%;
 }
